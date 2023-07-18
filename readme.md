@@ -1,6 +1,6 @@
-# BOT ZDG
+# FORK DO BOT ZDG
 
-Olá, essa é uma implementação da biblioteca <a href="https://github.com/pedroslopez/whatsapp-web.js">wweb.js</a>
+Esse projeto é uma implementação da biblioteca <a href="https://github.com/pedroslopez/whatsapp-web.js">wweb.js</a> junto ao repositorio <a href="https://github.com/pedroherpeto/comunidadezdg">comunidadezdg</a>
 
 Conheça o canal da Comunidade ZDG:
 
@@ -9,15 +9,11 @@ Conheça o canal da Comunidade ZDG:
 
 ### Como usar?
 
-- git clone https://github.com/pedroherpeto/comunidadezdg.git
+- git clone https://github.com/iWSCode/comunidadezdg.git
 - cd comunidadezdg
 - Rodar `npm install`
 - Rodar `npm start`
 - Abrir o browser no endereço `http://localhost:8000`
 - Ler o QRCode na tela
-
-
-## Conheça a Comunidade ZDG
-
-🤑 Garanta sua renda extra explorando todo o poder da API de graça, mesmo que você nao seja programador, clicando no link <a href="https://comunidadezdg.com.br">Comunidade ZDG</a>. Obrigado =)
-
+- Volte uma pasta e entre na front-end/ e abra o arquivo index.html (Pode abrir com o próprio live server do VSCode, mas atenção as portas que estão sendo usadas)
+- Após isso, é só enviar mensagem com texto junto com documentos ou imagens.
