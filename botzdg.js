@@ -177,7 +177,7 @@ app.post('/zdg-message', [
 app.post('/zdg-media', [
   body('number').notEmpty(),
   body('caption').notEmpty(),
-  //body('file').notEmpty(),
+  //body('file').notEmpty(), //test
 ], async (req, res) => {
   const errors = validationResult(req).formatWith(({
     msg
