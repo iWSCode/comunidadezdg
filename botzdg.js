@@ -177,7 +177,7 @@ app.post('/zdg-message', [
 app.post('/zdg-media', [
   body('number').notEmpty(),
   body('caption').notEmpty(),
-  //body('file').notEmpty(), //test sub
+  //body('file').notEmpty(),
 ], async (req, res) => {
   const errors = validationResult(req).formatWith(({
     msg
@@ -214,7 +214,7 @@ app.post('/zdg-media', [
     media = new MessageMedia(mimetype, attachment, 'Media');
   }
 
-  let numberZDG; // Define numberZDG here
+  let numberZDG;
 
   if (numberDDI !== "55") {
     numberZDG = number + "@c.us";
@@ -225,7 +225,6 @@ app.post('/zdg-media', [
   }
 
   if (media && (mimetype === 'application/pdf' || mimetype === 'application/msword' || mimetype === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document')) {
-    // This is a document (PDF or Word), so send it as a document
     client.sendMessage(numberZDG, media, { caption: caption, sendMediaAsDocument: true })
       .then(response => {
         res.status(200).json({
